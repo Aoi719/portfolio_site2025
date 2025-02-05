@@ -1,0 +1,35 @@
+@use "../settings/variables" as *;
+@use "../settings/functions" as *;
+@use "../mixins/breakpoints" as *;
+
+@import url("https://fonts.googleapis.com/css2?family=Noto+Sans+JP:wght@100..900&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Barlow+Semi+Condensed:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap");
+
+* {
+  margin: 0;
+  padding: 0;
+}
+body {
+  font-family: "Noto Sans JP", serif;
+  color: $text-color;
+  font-size: fz(16);
+  line-height: 1.7;
+  @include mq() {
+    font-size: fz(14);
+  }
+}
+img {
+  vertical-align: bottom;
+  max-width: 100%;
+  height: auto;
+}
+input,
+button,
+textarea,
+select {
+  -webkit-appearance: none;
+  appearance: none;
+  &:focus {
+    outline-offset: 4px;
+  }
+}
