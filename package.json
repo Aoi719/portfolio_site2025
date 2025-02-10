@@ -6,9 +6,13 @@
     "dev": "astro dev",
     "build": "astro build",
     "preview": "astro preview",
-    "astro": "astro"
+    "astro": "astro",
+    "prettier": "prettier --write './dist/**/*.{css,html}' --ignore-path .prettierignore"
   },
   "dependencies": {
     "astro": "^5.1.10"
+  },
+  "devDependencies": {
+    "sass-embedded": "^1.83.4"
   }
 }
