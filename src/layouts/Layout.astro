@@ -1,6 +1,8 @@
 ---
-import data from "../data/data.json";
+import data from "@data/data.json";
 import "@styles/style.scss";
+import Header from "@layouts/Header.astro";
+import Footer from "@layouts/Footer.astro";
 
 const url = data.siteUrl;
 const ogimage = data.siteOgImage;
@@ -25,7 +27,9 @@ const description = data.siteDescription;
     <meta name="twitter:card" content="summary_large_image" />
   </head>
   <body>
+    <Header />
     <slot />
+    <Footer />
   </body>
 </html>
 
