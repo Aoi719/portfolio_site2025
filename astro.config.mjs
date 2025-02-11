@@ -1,8 +1,10 @@
 // @ts-check
 import { defineConfig } from 'astro/config';
+import relativeLinks from 'astro-relative-links';
 
 // https://astro.build/config
 export default defineConfig({
+  integrations: [relativeLinks()],
   vite: {
     css: {
       preprocessorOptions: {
@@ -25,13 +27,13 @@ export default defineConfig({
             if (fileName && Array.isArray(fileName)) {
               const extType = fileName[0].split('.').at(-1);
               if (extType === 'css') {
-                return 'css/style.css';
+                return 'css/[name][extname]';
               }
             }
             return `assets/[name][extname]`;
           },
         },
       }
-    }
+    },
   }
 });
