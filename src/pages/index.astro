@@ -1,7 +1,6 @@
 ---
 import Layout from "@layouts/Layout.astro";
 import WorksList from "@components/worksList.astro";
-import WorksListItem from "@components/worksListItem.astro";
 ---
 
 <Layout>
@@ -36,11 +35,7 @@ import WorksListItem from "@components/worksListItem.astro";
   <section class="section">
     <div class="section__inner">
       <h2 class="primary-heading">作品一覧</h2>
-      <WorksList>
-        <WorksListItem imgUrl="https://placehold.jp/1200x478.png" alt="作品キャプチャ画像1" title="見出し1"> テキストテキストテキストテキストテキストテキスト</WorksListItem>
-        <WorksListItem imgUrl="https://placehold.jp/1200x478.png" alt="作品キャプチャ画像2" title="見出し2"> テキストテキストテキストテキストテキストテキスト</WorksListItem>
-        <WorksListItem imgUrl="https://placehold.jp/1200x478.png" alt="作品キャプチャ画像3" title="見出し3"> テキストテキストテキストテキストテキストテキスト</WorksListItem>
-      </WorksList>
+      <WorksList />
     </div>
   </section>
 </Layout>

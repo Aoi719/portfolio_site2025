@@ -1,7 +1,19 @@
 ---
-
+import works from "../data/article.json";
 ---
 
 <ul class="works-list">
-  <slot />
+  {
+    works.map((work) => (
+      <li>
+        <div class="works-list__image">
+          <img src={work.image} alt={`作品キャプチャ画像: ${work.title}`} />
+        </div>
+        <div class="works-list__description">
+          <h3 class="works-list__heading">{work.title}</h3>
+          <p class="works-list__text">{work.description}</p>
+        </div>
+      </li>
+    ))
+  }
 </ul>

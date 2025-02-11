@@ -1,0 +1,23 @@
+[
+  {
+    "id": 1,
+    "title": "作品タイトル1",
+    "description": "これは作品の説明です。",
+    "image": "https://placehold.jp/1200x478.png",
+    "slug": "work-1"
+  },
+  {
+    "id": 2,
+    "title": "作品タイトル2",
+    "description": "別の作品の説明です。",
+    "image": "https://placehold.jp/1200x478.png",
+    "slug": "work-2"
+  },
+  {
+    "id": 3,
+    "title": "作品タイトル3",
+    "description": "3つめの作品の説明です。",
+    "image": "https://placehold.jp/1200x478.png",
+    "slug": "work-3"
+  }
+]
