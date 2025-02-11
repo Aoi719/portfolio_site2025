@@ -1,11 +1,46 @@
 ---
-import Welcome from '../components/Welcome.astro';
-import Layout from '../layouts/Layout.astro';
-
-// Welcome to Astro! Wondering what to do next? Check out the Astro documentation at https://docs.astro.build
-// Don't want to use any of this? Delete everything in this file, the `assets`, `components`, and `layouts` directories, and start fresh.
+import Layout from "@layouts/Layout.astro";
+import WorksList from "@components/worksList.astro";
+import WorksListItem from "@components/worksListItem.astro";
 ---
 
 <Layout>
-	<Welcome />
+  <section class="mv">
+    <div class="mv__inner">MV</div>
+  </section>
+  <section class="section">
+    <div class="section__inner">
+      <h2 class="primary-heading">プロフィール</h2>
+      <div class="flex-box">
+        <div class="flex-box__item">
+          <p class="name">西　葵</p>
+          <h3 class="secondary-heading">できること、やってきたこと</h3>
+          <ul class="disc-list">
+            <li>HTML/CSSコーディング</li>
+            <li>jQuery</li>
+            <li>Astro</li>
+            <li>Googleアナリティクスを使用したアクセス解析レポート制作</li>
+            <li>Webアクセシビリティ試験業務（AAまで）</li>
+          </ul>
+          <h3 class="secondary-heading">経歴</h3>
+          <p class="text">
+            テキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキスト
+          </p>
+        </div>
+        <div class="flex-box__item">
+          <img src="https://placehold.jp/530x300.png" alt="プロフィール画像" />
+        </div>
+      </div>
+    </div>
+  </section>
+  <section class="section">
+    <div class="section__inner">
+      <h2 class="primary-heading">作品一覧</h2>
+      <WorksList>
+        <WorksListItem imgUrl="https://placehold.jp/1200x478.png" alt="作品キャプチャ画像1" title="見出し1"> テキストテキストテキストテキストテキストテキスト</WorksListItem>
+        <WorksListItem imgUrl="https://placehold.jp/1200x478.png" alt="作品キャプチャ画像2" title="見出し2"> テキストテキストテキストテキストテキストテキスト</WorksListItem>
+        <WorksListItem imgUrl="https://placehold.jp/1200x478.png" alt="作品キャプチャ画像3" title="見出し3"> テキストテキストテキストテキストテキストテキスト</WorksListItem>
+      </WorksList>
+    </div>
+  </section>
 </Layout>
