@@ -5,25 +5,46 @@ import WorksList from "@components/worksList.astro";
 
 <Layout>
   <section class="mv">
-    <div class="mv__inner">MV</div>
+    <div class="mv__inner">
+      <div class="mv__image">
+        <img src="/images/mv.jpg" alt="" />
+      </div>
+      <div class="mv__heading">
+        <h1 class="mv__heading-inner">
+          <span class="mv__heading-text">西　葵</span>
+          <span class="mv__heading-text"> ポートフォリオサイト </span>
+        </h1>
+      </div>
+    </div>
   </section>
   <section class="section">
     <div class="section__inner">
-      <h2 class="primary-heading">プロフィール</h2>
+      <h2 class="primary-heading" id="anchor-01">プロフィール</h2>
       <div class="flex-box">
         <div class="flex-box__item">
-          <p class="name">西　葵</p>
-          <h3 class="secondary-heading">できること、やってきたこと</h3>
+          <p class="name mb-40"><strong>西　葵<span class="name__ruby">（にし　あおい）</span></strong></p>
+          <h3 class="secondary-heading">使用可能な技術、経験業務</h3>
           <ul class="disc-list">
-            <li>HTML/CSSコーディング</li>
+            <li>HTML</li>
+            <li>CSS、SCSS</li>
             <li>jQuery</li>
             <li>Astro</li>
-            <li>Googleアナリティクスを使用したアクセス解析レポート制作</li>
+            <li>EJS</li>
+            <li>Git</li>
+            <li>MovableTypeを使用した簡単な記事更新</li>
             <li>Webアクセシビリティ試験業務（AAまで）</li>
+            <li>Googleアナリティクスを使用したアクセス解析レポート制作</li>
           </ul>
-          <h3 class="secondary-heading">経歴</h3>
+          <h3 class="secondary-heading mt-lg">経歴</h3>
+          <p class="text">旭川市出身、札幌市在住</p>
           <p class="text">
-            テキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキスト
+            2019年6月にWeb制作を学ぶため職業訓練校に入校。同年12月修了。<br />
+            修了と同時に入社したWeb制作1社目では、CMSを利用した運用・更新業務を担当。
+          </p>
+          <p class="text">
+            2021年9月、キャリアアップを目指し現職へ入社。<br />
+            HTML/CSS（SCSS）やjQuery、Astroなどを使用した制作業務に従事。<br />
+            また、現職では制作だけではなく、Webアクセシビリティの試験業務や、Googleアナリティクス4を使用したアクセス解析レポート作成業務も経験。
           </p>
         </div>
         <div class="flex-box__item">
@@ -32,9 +53,9 @@ import WorksList from "@components/worksList.astro";
       </div>
     </div>
   </section>
-  <section class="section">
+  <section class="section bg-white">
     <div class="section__inner">
-      <h2 class="primary-heading">作品一覧</h2>
+      <h2 class="primary-heading" id="anchor-02">作品一覧</h2>
       <WorksList />
     </div>
   </section>

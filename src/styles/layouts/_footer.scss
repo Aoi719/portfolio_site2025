@@ -1,0 +1,15 @@
+@use "../settings/variables" as *;
+@use "../settings/functions" as *;
+@use "../mixins/breakpoints" as *;
+
+.footer {
+  background: $base-color;
+  &__inner {
+    padding: 16px 48px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  &__copy {
+  }
+}

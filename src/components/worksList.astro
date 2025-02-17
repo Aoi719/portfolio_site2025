@@ -1,18 +1,23 @@
 ---
-import works from "../data/article.json";
+import works from "@data/article.json";
 ---
 
 <ul class="works-list">
   {
     works.map((work) => (
       <li>
-        <div class="works-list__image">
-          <img src={work.image} alt={`作品キャプチャ画像: ${work.title}`} />
-        </div>
-        <div class="works-list__description">
-          <h3 class="works-list__heading">{work.title}</h3>
-          <p class="works-list__text">{work.description}</p>
-        </div>
+        <a class="works-list__link" href={work.url}>
+          <div class="works-list__image">
+            <img src={work.image} alt={`作品キャプチャ画像: ${work.title}`} />
+            <div class="works-list__hover">
+              <span class="works-list__hover-text">詳細を見る</span>
+            </div>
+          </div>
+          <div class="works-list__description">
+            <h3 class="works-list__heading">{work.title}</h3>
+          </div>
+        </a>
+        <p class="works-list__text" set:html={work.description.replace(/\n/g, "<br>")} />
       </li>
     ))
   }

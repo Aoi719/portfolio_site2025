@@ -5,9 +5,9 @@
 //settings
 
 // layout
-// @use "layout/layouts";
-// @use "layout/header";
-// @use "layout/footer";
+// @use "layouts/layouts";
+@use "layouts/header";
+@use "layouts/footer";
 
 // utilities
 @use "utilities/display";
@@ -17,13 +17,11 @@
 @use "utilities/texts";
 
 // components
-// @use "components/text";
-// @use "components/mv";
-// @use "components/section";
-// @use "components/splide";
-// @use "components/headings";
-// @use "components/box";
+@use "components/text";
+@use "components/mv";
+@use "components/section";
+@use "components/heading";
+@use "components/box";
 // @use "components/table";
 // @use "components/link";
-// @use "components/list";
-// @use "components/form";
+@use "components/list";

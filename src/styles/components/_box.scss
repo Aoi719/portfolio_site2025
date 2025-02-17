@@ -1,0 +1,14 @@
+@use "../settings/variables" as *;
+@use "../settings/functions" as *;
+@use "../mixins/breakpoints" as *;
+
+.flex-box {
+  display: flex;
+  &__item {
+    &:last-child {
+      max-width: 530px;
+      flex:  0 0 auto;
+      margin-left: 30px;
+    }
+  }
+}

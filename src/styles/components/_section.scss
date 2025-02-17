@@ -1,0 +1,15 @@
+@use "../settings/variables" as *;
+@use "../settings/functions" as *;
+@use "../mixins/breakpoints" as *;
+
+.section {
+  background: $base-color;
+  &__inner {
+    max-width: $w-lg;
+    margin-inline: auto;
+    padding: 100px 0;
+  }
+  &.bg-white {
+    background: $bg-color-01;
+  }
+}

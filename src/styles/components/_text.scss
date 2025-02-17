@@ -1,0 +1,16 @@
+@use "../settings/variables" as *;
+@use "../settings/functions" as *;
+@use "../mixins/breakpoints" as *;
+
+.text {
+  & + & {
+    margin-top: 16px;
+  }
+}
+.name {
+  font-family: "BIZ UDPGothic", serif;
+  font-size: fz(32);
+  &__ruby {
+    font-size: fz(18);
+  }
+}

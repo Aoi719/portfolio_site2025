@@ -1,0 +1,81 @@
+@use "../settings/variables" as *;
+@use "../settings/functions" as *;
+@use "../mixins/breakpoints" as *;
+
+.disc-list {
+  > li {
+    position: relative;
+    padding-left: 1.5em;
+    &::before {
+      content: "";
+      position: absolute;
+      margin-top: 3px;
+      top: 0.5em;
+      left: 0;
+      width: 0.5em;
+      height: 0.5em;
+      border-radius: 50%;
+      background: $text-color;
+    }
+    & + li {
+      margin-top: 8px;
+    }
+  }
+}
+
+.works-list {
+  > li {
+    overflow: hidden;
+    & + li {
+      margin-top: 80px;
+    }
+  }
+  &__link {
+    color: $text-color;
+    &:hover {
+      text-decoration: none;
+      .works-list__hover {
+        transform: translateX(0%);
+      }
+    }
+  }
+  &__image {
+    position: relative;
+  }
+  &__description {
+    margin-top: 16px;
+  }
+  &__heading {}
+  &__text {
+    margin-top: 16px;
+  }
+  &__hover {
+    transform: translateX(100%);
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background-color: rgba($color: #000, $alpha: 0.7);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    transition: transform ease-out 0.3s;
+    &-text {
+      color: $text-color-reverse;
+      font-size: fz(24);
+      position: relative;
+      &::after {
+        content: "";
+        position: absolute;
+        margin-top: -2px;
+        top: 0.5em;
+        right: -48px;
+        clip-path: polygon(0 7%, 7% 0, 57% 50%, 7% 100%, 0 93%, 43% 50%, 0 7%);
+        height: 24px;
+        aspect-ratio: 1;
+        background-color: $text-color-reverse;
+      }
+    }
+  }
+}

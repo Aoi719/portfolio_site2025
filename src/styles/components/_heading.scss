@@ -1,0 +1,30 @@
+@use "../settings/variables" as *;
+@use "../settings/functions" as *;
+@use "../mixins/breakpoints" as *;
+
+.primary-heading {
+  text-align: center;
+  margin-bottom: 40px;
+  font-size: fz(48);
+  font-family: "BIZ UDPGothic", serif;
+  font-weight: 700;
+}
+.secondary-heading {
+  margin-bottom: 16px;
+  font-size: fz(24);
+  font-family: "BIZ UDPGothic", serif;
+  font-weight: 700;
+  position: relative;
+  padding-left: 48px;
+  &::before {
+    content: "";
+    display: inline-block;
+    position: absolute;
+    margin-top: -6px;
+    top: 1em;
+    left: 0;
+    width: 32px;
+    height: 6px;
+    background: $accent-color-01;
+  }
+}
