@@ -2,9 +2,9 @@
   {
     "id": 1,
     "title": "コーポレートサイト「Envision Lab」",
-    "description": "Web制作・コンサルなどの会社を想定したコーポレートサイトの作品です。\nシンプルですが、Webアクセシビリティ（AA）をクリアすることを念頭に置き制作しています。\nメインビジュアルのスライダープラグインは、アクセシビリティに特化している「Splide」を使用。",
+    "description": "Web制作・コンサルなどの事業を行う会社を想定したコーポレートサイトの作品です。\nシンプルですが、Webアクセシビリティ（AA）をクリアすることを念頭に置き制作しています。\nメインビジュアルのスライダープラグインは、アクセシビリティに特化している「Splide」を使用。\nWebアクセシビリティについては、<a href=\"./a11y.html\" class=\"text-link\">Webアクセシビリティについて</a>をご参照ください。",
     "image": "/images/works_img01.jpg",
-    "url": "https://test.co.jp",
+    "url": "/works/works01/index.html",
     "slug": "work-1"
   },
   {
@@ -17,10 +17,10 @@
   },
   {
     "id": 3,
-    "title": "作品タイトル3",
-    "description": "3つめの作品の説明です。",
+    "title": "コラム：Webアクセシビリティについて",
+    "description": "Webアクセシビリティについてのコラムを書きました。\n1つ目のコーポレートサイト作品でもWebアクセシビリティを意識した制作をしていますが、「そもそもWebアクセシビリティとは何か？」の解説をまとめています。",
     "image": "https://placehold.jp/1200x478.png",
-    "url": "https://test3.co.jp",
+    "url": "/a11y.html",
     "slug": "work-3"
   }
 ]

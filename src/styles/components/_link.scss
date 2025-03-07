@@ -1,0 +1,28 @@
+@use "../settings/variables" as *;
+@use "../settings/functions" as *;
+@use "../mixins/breakpoints" as *;
+
+.link-button {
+  display: flex;
+  background-color: $accent-color-02;
+  color: $text-color-reverse;
+  border: 2px solid $accent-color-02;
+  max-width: 240px;
+  width: 100%;
+  padding: 16px;
+  justify-content: center;
+  text-decoration: none;
+  font-weight: bold;
+  transition: color .3s, background-color .3s;
+  &:hover {
+    color: $accent-color-02;
+    background-color: $text-color-reverse;
+  }
+}
+.text-link {
+  color: $text-color;
+  font-weight: bold;
+  &:hover {
+    text-decoration: none;
+  }
+}

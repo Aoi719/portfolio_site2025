@@ -1,4 +1,108 @@
-@for $i from 1 through 10 {
+@use "../settings/variables" as *;
+
+// 規定
+// margin（四方）
+.p-sm {
+  padding: $sm !important;
+}
+.p-m {
+  padding: $m !important;
+}
+.p-lg {
+  padding: $lg !important;
+}
+.p-xl {
+  padding: $xl !important;
+}
+.p-xxl {
+  padding: $xxl !important;
+}
+.p-xxxl {
+  padding: $xxxl !important;
+}
+
+// padding-top
+.pt-sm {
+  padding-top: $sm !important;
+}
+.pt-m {
+  padding-top: $m !important;
+}
+.pt-lg {
+  padding-top: $lg !important;
+}
+.pt-xl {
+  padding-top: $xl !important;
+}
+.pt-xxl {
+  padding-top: $xxl !important;
+}
+.pt-xxxl {
+  padding-top: $xxxl !important;
+}
+
+// padding-bottom
+.pb-sm {
+  padding-bottom: $sm !important;
+}
+.pb-m {
+  padding-bottom: $m !important;
+}
+.pb-lg {
+  padding-bottom: $lg !important;
+}
+.pb-xl {
+  padding-bottom: $xl !important;
+}
+.pb-xxl {
+  padding-bottom: $xxl !important;
+}
+.pb-xxxl {
+  padding-bottom: $xxxl !important;
+}
+
+// padding-right
+.pr-sm {
+  padding-right: $sm !important;
+}
+.pr-m {
+  padding-right: $m !important;
+}
+.pr-lg {
+  padding-right: $lg !important;
+}
+.pr-xl {
+  padding-right: $xl !important;
+}
+.pr-xxl {
+  padding-right: $xxl !important;
+}
+.pr-xxxl {
+  padding-right: $xxxl !important;
+}
+
+// padding-left
+.pl-sm {
+  padding-left: $sm !important;
+}
+.pl-m {
+  padding-left: $m !important;
+}
+.pl-lg {
+  padding-left: $lg !important;
+}
+.pl-xl {
+  padding-left: $xl !important;
+}
+.pl-xxl {
+  padding-left: $xxl !important;
+}
+.pl-xxxl {
+  padding-left: $xxxl !important;
+}
+
+
+@for $i from 0 through 10 {
   $num: $i * 5;
 
   .pt-#{$num} {

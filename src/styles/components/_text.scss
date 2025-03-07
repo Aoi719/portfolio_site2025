@@ -14,3 +14,10 @@
     font-size: fz(18);
   }
 }
+.blockquote {
+  background: #ccc;
+  padding: 20px;
+  max-width: 900px;
+  margin-inline: auto;
+  line-height: 1.8;
+}
