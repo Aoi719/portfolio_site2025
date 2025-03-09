@@ -8,6 +8,9 @@ const url = data.siteUrl;
 const ogimage = data.siteOgImage;
 const title = data.siteTitle;
 const description = data.siteDescription;
+
+const isHome = Astro.url.pathname === "/";
+const bodyId = isHome ? "home" : "";
 ---
 
 <!doctype html>
@@ -26,7 +29,7 @@ const description = data.siteDescription;
     <meta property="og:image" content={ogimage} />
     <meta name="twitter:card" content="summary_large_image" />
   </head>
-  <body>
+  <body id={bodyId}>
     <Header />
     <main><slot /></main>
     <Footer />

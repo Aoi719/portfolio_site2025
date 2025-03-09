@@ -8,6 +8,10 @@
   font-size: fz(48);
   font-family: "BIZ UDPGothic", serif;
   font-weight: 700;
+  @include mq {
+    font-size: fz(32);
+    margin-bottom: 24px;
+  }
 }
 .secondary-heading {
   margin-bottom: 16px;
@@ -16,6 +20,10 @@
   font-weight: 700;
   position: relative;
   padding-left: 48px;
+  @include mq() {
+    font-size: fz(18);
+    padding-left: 32px;
+  }
   &::before {
     content: "";
     display: inline-block;
@@ -26,5 +34,10 @@
     width: 32px;
     height: 6px;
     background: $accent-color-01;
+    @include mq {
+      margin-top: -4px;
+      width: 24px;
+      height: 4px;
+    }
   }
 }

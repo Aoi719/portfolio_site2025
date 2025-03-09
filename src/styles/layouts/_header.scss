@@ -9,9 +9,15 @@
     display: flex;
     justify-content: space-between;
     align-items: center;
+    @include mq {
+      padding: 16px;
+    }
   }
   &__logo {
-    width: 180px;
+    width: 120px;
+    @include mq {
+      width: 90px;
+    }
     a {
       transition: opacity 0.3s;
       &:hover {
@@ -25,6 +31,9 @@
     > li {
       & + li {
         margin-left: 24px;
+        @include mq {
+          margin-left: 16px;
+        }
       } 
       a {
         text-decoration: none;
@@ -33,6 +42,10 @@
         color: $text-color;
         font-weight: bold;
         transition: background-color 0.3s, color 0.3s;
+        @include mq {
+          font-size: fz(14);
+          padding: 8px;
+        }
         &:hover {
           background-color: $text-color;
           color: $text-color-reverse;

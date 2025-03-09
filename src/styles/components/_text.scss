@@ -10,8 +10,14 @@
 .name {
   font-family: "BIZ UDPGothic", serif;
   font-size: fz(32);
+  @include mq {
+    font-size: fz(24);
+  }
   &__ruby {
     font-size: fz(18);
+    @include mq {
+      font-size: fz(14);
+    }
   }
 }
 .blockquote {

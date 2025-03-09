@@ -6,12 +6,68 @@ import WorksList from "@components/worksList.astro";
 <Layout>
   <section class="section bg-white">
     <div class="section__inner">
-      <h1 class="works-heading">コーポレートサイト「Envision Lab」</h1>
-      <h2 class="primary-heading">制作のポイント</h2>
-      <p>
-        この作品は、Webアクセシビリティの準拠を意識して制作しています。<br />
+      <h1 class="primary-heading">
+        <span class="d-ib">コーポレートサイト</span><span class="d-ib">「Envision Lab」</span>
+      </h1>
+      <h2 class="secondary-heading mt-xxl">作品・ソースコードを見る</h2>
+      <ul class="button-list">
+        <li class="button-list__item">
+          <a href="https://aoi719.github.io/portforli2025_corporate_A/" target="_blank" class="link-button w-lg">作品を見る <img src="/images/icon_new-window_white.svg" alt="別ウインドウで開く" class="blank-icon" /></a>
+        </li>
+        <li class="button-list__item">
+          <a href="https://github.com/Aoi719/portforli2025_corporate_A" target="_blank" class="link-button w-lg">GitHubでソースコードを見る <img src="/images/icon_new-window_white.svg" alt="別ウインドウで開く" class="blank-icon" /></a>
+        </li>
+      </ul>
+      <p class="mt-xxl">以下、「制作のポイント」もぜひご覧ください。</p>
+      <h2 class="secondary-heading mt-xxl">制作のポイント</h2>
+      <figure>
+        <img src="/images/works_img01.jpg" alt="" />
+        <figcaption class="mt-lg">
+          メインビジュアルにはスライダーを取り入れています。<br />
+          アクセシビリティを高いレベルで意識したプラグインである「Splide」を採用しました。<br />
+          スライダーなど動きのある要素は、ユーザーが任意に一時停止・再生できる必要があるため、右下に一時停止・再生ボタンを用意しました。<br />
+          （<a href="https://waic.jp/translations/WCAG21/Understanding/pause-stop-hide.html" target="_blank" class="text-link">WCAG達成基準 2.2.2 <img src="/images/icon_new-window.svg" alt="別ウインドウで開く" class="blank-icon" /></a>）
+        </figcaption>
+      </figure>
+      <figure class="mt-xxl">
+        <img src="/images/works_img01_01.png" alt="" />
+        <figcaption class="mt-lg">
+          Google Chromeの拡張機能「axe Dev Tools」で、トップページのアクセシビリティ検証をかけた様子です。<br />
+          アクセシビリティの達成基準を満たしていない問題（「Total Issues」）は1つだけです。<br />
+          この画面で指摘されている問題はスライダープラグインにのJavaScriptに依存するもので、レベルも軽微なもののため大きな支障なありません。
+        </figcaption>
+      </figure>
+      <p class="mt-m">※サイトによっては問題数が数十～100以上などに及ぶ場合もあります。</p>
+      <figure class="mt-xxl">
+        <img src="/images/works_img01_02.png" alt="" />
+        <figcaption class="mt-lg">
+          お問い合わせフォームの設問「お名前」に、TABキーでフォーカスを当てた様子です。<br />
+          CSSを使用し、入力欄がフォーカスされたことが一目でわかるアウトラインのつけ方にするため工夫しています。
+        </figcaption>
+      </figure>
+      <p class="mt-m">
+        ちなみに、CSS対応をしないデフォルトのフォーカスアウトラインは以下のようになります。<br />フォーカスを当てていない入力欄と比べると、微妙に角丸がついて色が濃くなる感じがしますが、大変わかりにくいです。
       </p>
-      <h3 class="secondary-heading">Webアクセシビリティについて</h3>
+      <div class="mt-sm">
+        <img src="/images/works_img01_02_01.png" alt="" />
+      </div>
+      <figure class="mt-xxl">
+        <img src="/images/works_img01_04.png" alt="" />
+        <figcaption class="mt-lg">
+          送信ボタン。実際に送信はできませんが、プライバシーポリシー同意にチェックを入れない限り非活性になり押すことができないギミックを入れています。<br />
+          チェックを入れて活性化させた後、再度チェックを外すとしっかり非活性に戻ります。
+        </figcaption>
+      </figure>
+      <figure class="mt-xxl">
+        <img src="/images/works_img01_03.png" alt="" />
+        <figcaption class="mt-lg">
+          お問い合わせフォームも、「axe Dev Tools」でアクセシビリティ検証をかけてみました。<br />
+          こちらは問題が検出されませんでした。<br />
+          フォームは入力欄があったり、送信ボタンがあったりなど、通常のページとは異なる要素を多く持つため、問題が出やすい部分です。
+        </figcaption>
+      </figure>
+      <p class="mt-m mb-xl">※ツールで問題が検出されなかったから完全に問題ないかというとそうではなく、目視でしか見つけられない問題も潜んでいる可能性はあります。</p>
+      <div class="d-flex jcc"><a href="../../" class="link-button">ホームへ戻る</a></div>
     </div>
   </section>
 </Layout>

@@ -10,19 +10,28 @@
   &__heading {
     position: absolute;
     top: 50%;
-    left: 160px;
+    left: 10.42vw;
     transform: translateY(-50%);
+    @include mq {
+      left: 20px;
+    }
   }
   &__heading-inner {}
   &__heading-text {
     font-family: "BIZ UDPGothic", serif;
     font-weight: 700;
     &:first-child {
-      font-size: fz(48);
       display: block;
+      font-size: fz(48);
+      @include mq {
+        font-size: fz(24);
+      }
     }
     &:last-child {
       font-size: fz(64);
+      @include mq {
+        font-size: fz(32);
+      }
     }
   }
 }

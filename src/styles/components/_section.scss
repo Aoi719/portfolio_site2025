@@ -8,6 +8,9 @@
     max-width: $w-lg;
     margin-inline: auto;
     padding: 100px 20px;
+    @include mq {
+      padding: 48px 20px;
+    }
   }
   &.bg-white {
     background: $bg-color-01;

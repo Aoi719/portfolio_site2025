@@ -9,17 +9,17 @@
   },
   {
     "id": 2,
-    "title": "作品タイトル2",
-    "description": "別の作品の説明です。",
-    "image": "https://placehold.jp/1200x478.png",
-    "url": "https://test2.co.jp",
+    "title": "ポートフォリオサイト",
+    "description": "今ご覧のポートフォリオサイトです。「Astro」というフレームワークを用いて制作しました。\n作品一覧をJSONデータで管理し、Astroと組み合わせて簡単に更新できるように工夫しています。",
+    "image": "/images/works_img02.png",
+    "url": "/works/works02/index.html",
     "slug": "work-2"
   },
   {
     "id": 3,
     "title": "コラム：Webアクセシビリティについて",
     "description": "Webアクセシビリティについてのコラムを書きました。\n1つ目のコーポレートサイト作品でもWebアクセシビリティを意識した制作をしていますが、「そもそもWebアクセシビリティとは何か？」の解説をまとめています。",
-    "image": "https://placehold.jp/1200x478.png",
+    "image": "/images/works_img03.png",
     "url": "/a11y.html",
     "slug": "work-3"
   }

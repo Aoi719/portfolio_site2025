@@ -2,43 +2,32 @@
 
 $(function () {
   // スムーススクロール
-  $('a[href^="#"]').on("click", function () {
-    const speed = 600;
-    let href = $(this).attr("href");
-    let target = $(href == "#" || href == "" ? "html" : href);
-    let position = target.offset().top;
-    $("body,html").animate({ scrollTop: position }, speed, "swing");
-    return false;
-  });
+  if($("body").attr("id") == "home") {
+    $('a[href^="#"]').on("click", function () {
+      const speed = 600;
+      let href = $(this).attr("href");
+      let target = $(href == "#" || href == "" ? "html" : href);
+      let position = target.offset().top;
+      $("body,html").animate({ scrollTop: position }, speed, "swing");
+      return false;
+    });
+  } else {
+    let navLink = $(".header__nav-list > li > a");
+    $.each(navLink, function(){
+      $(this).on("click", function(e){
+        e.preventDefault();
+        let $this = $(this);
+        let nowUrl = location.pathname;
+        let nowUrlSplit = nowUrl.split("/").filter(n => n);
+        let targetUrl = $this.attr("href");
+        let targetUrlSplit = targetUrl.split("/").filter(n => n);
+        let dir = "../".repeat(nowUrlSplit.length);
+        let newUrl = dir + "index.html" + targetUrlSplit.join("/");
 
-  // // SPハンバーガーメニュー
-  // let spBp = 769;
-  // let headerNav = $(".header__nav");
-  // let hMenuBtn = $(".header__hamburger-button");
-  // let isMenuOpen = false;
-  // hMenuBtn.on("click", function () {
-  //   const $this = $(this);
-  //   isMenuOpen = !isMenuOpen;
-  //   $this.toggleClass("is-open");
-  //   $this.closest(".header__hamburger").siblings(".header__nav").slideToggle();
-  //   if ($this.attr("aria-expanded") === "false") {
-  //     $this.attr("aria-expanded", "true");
-  //   } else {
-  //     $this.attr("aria-expanded", "false");
-  //   }
-  // });
-  // $(window).on("resize", function () {
-  //   console.log($(window).outerWidth());
-  //   if ($(window).outerWidth() >= spBp) {
-  //     headerNav.show();
-  //   } else {
-  //     if (isMenuOpen) {
-  //       headerNav.show();
-  //     } else {
-  //       headerNav.hide();
-  //     }
-  //   }
-  // });
+        location.href = newUrl;
+      });
+    });
+  }
 
   // トップに戻るボタン
   $(window).on("scroll", function () {

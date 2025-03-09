@@ -1,0 +1,60 @@
+---
+import Layout from "@layouts/Layout.astro";
+import WorksList from "@components/worksList.astro";
+---
+
+<Layout>
+  <section class="section bg-white">
+    <div class="section__inner">
+      <h1 class="primary-heading">ポートフォリオサイト</h1>
+      <h2 class="secondary-heading mt-xxl">作品・ソースコードを見る</h2>
+      <ul class="button-list">
+        <li class="button-list__item">
+          <a href="https://github.com/Aoi719/portforli2025_corporate_A" target="_blank" class="link-button w-lg">GitHubでソースコードを見る <img src="/images/icon_new-window_white.svg" alt="別ウインドウで開く" class="blank-icon" /></a>
+        </li>
+      </ul>
+      <p class="mt-xxl">以下、「制作のポイント」もぜひご覧ください。</p>
+      <h2 class="secondary-heading mt-xxl">制作のポイント</h2>
+      <p class="mb-xxl">
+        制作にはフレームワークの「Astro」を使用。<br />
+        Node.jsを使用した環境構築からチャレンジしました。
+      </p>
+      <figure>
+        <div class="flex-box mb-lg">
+          <div class="flex-box__item">
+            <img src="/images/works_img02_04.png" alt="" />
+            <p>ヘッダーコンポーネントのastroファイル</p>
+          </div>
+          <div class="flex-box__item mt-sp-20">
+            <img src="/images/works_img02_05.png" alt="" />
+            <p>フッターコンポーネントのastroファイル</p>
+          </div>
+        </div>
+        <img src="/images/works_img02_03.png" alt="" />
+        <p>ヘッダー、フッターを共通で読み込むテンプレートファイル</p>
+        <figcaption class="mt-lg">
+          ヘッダーやフッターはすべてのページで共通のため、Astroコンポーネント化し、ページのテンプレートファイル（Layout.astro）で一括管理。<br />
+          各ページを構成するastroファイルは、このテンプレートファイルを読み込むことですべて共通の作りになるようにしています。<br />
+          ※もちろん、テンプレートファイルを複数作成すれば、1カラム・2カラムなど複数テンプレートを作り分けることも可能です。
+        </figcaption>
+      </figure>
+      <figure class="mt-xxl mb-xl">
+        <div class="flex-box mb-lg">
+          <div class="flex-box__item">
+            <img src="/images/works_img02_01.png" alt="" />
+            <p>リストコンポーネントのastroファイル</p>
+          </div>
+          <div class="flex-box__item mt-sp-20">
+            <img src="/images/works_img02_02.png" alt="" />
+            <p>作品一覧を管理するJSONファイル。このファイルをリストコンポーネントのastroファイルから呼び出す。</p>
+          </div>
+        </div>
+        <figcaption class="mt-lg">
+          作品一覧はastroコンポーネント化し、さらにJSONでリストを管理できるように工夫しました。<br />
+          通常であればHTMLに1つずつリストを記述していくところを、JSONに追記していくだけでリストを更新できるようにしています。
+        </figcaption>
+      </figure>
+      <div class="d-flex jcc"><a href="../../" class="link-button">ホームへ戻る</a></div>
+    </div>
+  </section>
+</Layout>

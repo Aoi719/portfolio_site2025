@@ -3,7 +3,7 @@ import Layout from "@layouts/Layout.astro";
 import WorksList from "@components/worksList.astro";
 ---
 
-<Layout>
+<Layout class="top">
   <section class="mv">
     <div class="mv__inner">
       <div class="mv__image">
@@ -20,9 +20,9 @@ import WorksList from "@components/worksList.astro";
   <section class="section">
     <div class="section__inner">
       <h2 class="primary-heading" id="anchor-01">プロフィール</h2>
-      <div class="flex-box">
+      <div class="flex-box flex-box--profile">
         <div class="flex-box__item">
-          <p class="name mb-40"><strong>西　葵<span class="name__ruby">（にし　あおい）</span></strong></p>
+          <p class="name mb-pc-40 mb-sp-20"><strong>西　葵<span class="name__ruby">（にし　あおい）</span></strong></p>
           <h3 class="secondary-heading">使用可能な技術、経験業務</h3>
           <ul class="disc-list">
             <li>HTML</li>
@@ -48,7 +48,7 @@ import WorksList from "@components/worksList.astro";
           </p>
         </div>
         <div class="flex-box__item">
-          <img src="https://placehold.jp/530x300.png" alt="プロフィール画像" />
+          <img src="/images/logo.png" alt="プロフィール画像" />
         </div>
       </div>
     </div>

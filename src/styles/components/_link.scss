@@ -14,9 +14,37 @@
   text-decoration: none;
   font-weight: bold;
   transition: color .3s, background-color .3s;
+  &.w-lg {
+    max-width: none;
+    @include mqup {
+      min-width: 300px;
+    }
+  }
+  .blank-icon {
+    transition: filter .3s;
+  }
   &:hover {
     color: $accent-color-02;
     background-color: $text-color-reverse;
+    .blank-icon {
+      filter: brightness(0) saturate(100%) invert(26%) sepia(90%) saturate(1516%) hue-rotate(204deg) brightness(92%) contrast(105%);
+    }
+  }
+}
+.button-list {
+  display: flex;
+  @include mq {
+    flex-direction: column;
+  }
+  &__item {
+    & + & {
+      @include mqup {
+        margin-left: 40px;
+      }
+      @include mq {
+        margin-top: 24px;
+      }
+    }
   }
 }
 .text-link {
@@ -25,4 +53,9 @@
   &:hover {
     text-decoration: none;
   }
+}
+.blank-icon {
+  max-width: 1em;
+  margin-left: 8px;
+  vertical-align: middle;
 }

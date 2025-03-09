@@ -4,11 +4,28 @@
 
 .flex-box {
   display: flex;
+  @include mq {
+    flex-direction: column;
+  }
   &__item {
     &:last-child {
-      max-width: 530px;
-      flex:  0 0 auto;
-      margin-left: 30px;
+      @include mqup() {
+        margin-left: 30px;
+      }
+    }
+  }
+  &.flex-box--profile {
+    .flex-box__item {
+      &:last-child {
+        @include mqup() {
+          max-width: 530px;
+          flex:  0 0 auto;
+        }
+        @include mq() {
+          margin-top: 24px;
+          text-align: center;
+        }
+      }
     }
   }
 }
