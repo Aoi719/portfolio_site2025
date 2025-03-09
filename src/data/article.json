@@ -20,7 +20,7 @@
     "title": "コラム：Webアクセシビリティについて",
     "description": "Webアクセシビリティについてのコラムを書きました。\n1つ目のコーポレートサイト作品でもWebアクセシビリティを意識した制作をしていますが、「そもそもWebアクセシビリティとは何か？」の解説をまとめています。",
     "image": "/images/works_img03.png",
-    "url": "/a11y.html",
+    "url": "/a11y/index.html",
     "slug": "work-3"
   }
 ]
