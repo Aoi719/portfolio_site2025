@@ -32,10 +32,12 @@
   }
   &__link {
     color: $text-color;
-    &:hover {
-      text-decoration: none;
-      .works-list__hover {
-        transform: translateX(0%);
+    @include mqup {
+      &:hover {
+        text-decoration: none;
+        .works-list__hover {
+          transform: translateX(0%);
+        }
       }
     }
   }

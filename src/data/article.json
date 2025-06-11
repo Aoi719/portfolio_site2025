@@ -2,7 +2,7 @@
   {
     "id": 1,
     "title": "コーポレートサイト「Envision Lab」",
-    "description": "Web制作・コンサルなどの事業を行う会社を想定したコーポレートサイトの作品です。\nシンプルですが、Webアクセシビリティ（AA）をクリアすることを念頭に置き制作しています。\nメインビジュアルのスライダープラグインは、アクセシビリティに特化している「Splide」を使用。\nWebアクセシビリティについては、<a href=\"./a11y.html\" class=\"text-link\">Webアクセシビリティについて</a>をご参照ください。",
+    "description": "Web制作・コンサルなどの事業を行う会社を想定したコーポレートサイトの作品です。\nシンプルですが、Webアクセシビリティ（AA）をクリアすることを念頭に置き制作しています。\nメインビジュアルのスライダープラグインは、アクセシビリティに特化している「Splide」を使用。\nWebアクセシビリティについては、<a href=\"/a11y/index.html\" class=\"text-link\">Webアクセシビリティについて</a>をご参照ください。",
     "image": "/images/works_img01.jpg",
     "url": "/works/works01/index.html",
     "slug": "work-1"
