@@ -49,7 +49,8 @@
   &__description {
     margin-top: 16px;
   }
-  &__heading {}
+  &__heading {
+  }
   &__text {
     margin-top: 16px;
   }
@@ -81,5 +82,19 @@
         background-color: $text-color-reverse;
       }
     }
+  }
+}
+.tag-list {
+  display: flex;
+  @include mq {
+    flex-wrap: wrap;
+  }
+  &__item {
+    font-size: fz(14);
+    margin-right: 10px;
+    margin-top: 10px;
+    border: 1px solid $text-color;
+    border-radius: 8px;
+    padding: 2px 10px;
   }
 }

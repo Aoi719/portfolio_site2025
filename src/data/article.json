@@ -1,26 +1,38 @@
 [
   {
     "id": 1,
+    "title": "ブログ「Travel Blog」",
+    "description": "WordPressテーマ開発を勉強し、制作したサイトです。\nまずはHTML/CSSをメインにサイトを構築し、そのファイルをもとにWordPressテーマ化を行いました。（記事の内容等はすべて架空のものです。）",
+    "image": "/images/works_img04.jpg",
+    "url": "/works/works03/index.html",
+    "slug": "work-4",
+    "tags": ["WordPress", "HTML", "CSS", "SCSS", "jQuery", "Node.js"]
+  },
+  {
+    "id": 2,
     "title": "コーポレートサイト「Envision Lab」",
     "description": "Web制作・コンサルなどの事業を行う会社を想定したコーポレートサイトの作品です。\nシンプルですが、Webアクセシビリティ（AA）をクリアすることを念頭に置き制作しています。\nメインビジュアルのスライダープラグインは、アクセシビリティに特化している「Splide」を使用。\nWebアクセシビリティについては、<a href=\"/a11y/index.html\" class=\"text-link\">Webアクセシビリティについて</a>をご参照ください。",
     "image": "/images/works_img01.jpg",
     "url": "/works/works01/index.html",
-    "slug": "work-1"
+    "slug": "work-1",
+    "tags": ["アクセシビリティ", "HTML", "CSS", "SCSS", "jQuery", "Node.js"]
   },
   {
-    "id": 2,
+    "id": 3,
     "title": "ポートフォリオサイト",
     "description": "今ご覧のポートフォリオサイトです。「Astro」というフレームワークを用いて制作しました。\n作品一覧をJSONデータで管理し、Astroと組み合わせて簡単に更新できるように工夫しています。",
     "image": "/images/works_img02.png",
     "url": "/works/works02/index.html",
-    "slug": "work-2"
+    "slug": "work-2",
+    "tags": ["Astro", "HTML", "CSS", "SCSS", "jQuery", "JSON", "Node.js"]
   },
   {
-    "id": 3,
+    "id": 4,
     "title": "コラム：Webアクセシビリティについて",
-    "description": "Webアクセシビリティについてのコラムを書きました。\n1つ目のコーポレートサイト作品でもWebアクセシビリティを意識した制作をしていますが、「そもそもWebアクセシビリティとは何か？」の解説をまとめています。",
+    "description": "Webアクセシビリティについてのコラムを書きました。\nコーポレートサイト作品「Envision Lab」でもWebアクセシビリティを意識した制作をしていますが、「そもそもWebアクセシビリティとは何か？」の解説をまとめています。",
     "image": "/images/works_img03.png",
     "url": "/a11y/index.html",
-    "slug": "work-3"
+    "slug": "work-3",
+    "tags": ["アクセシビリティ"]
   }
 ]

@@ -13,7 +13,9 @@
   justify-content: center;
   text-decoration: none;
   font-weight: bold;
-  transition: color .3s, background-color .3s;
+  transition:
+    color 0.3s,
+    background-color 0.3s;
   &.w-lg {
     max-width: none;
     @include mqup {
@@ -21,7 +23,7 @@
     }
   }
   .blank-icon {
-    transition: filter .3s;
+    transition: filter 0.3s;
   }
   &:hover {
     color: $accent-color-02;
@@ -44,6 +46,10 @@
       @include mq {
         margin-top: 24px;
       }
+    }
+    .link-button {
+      height: 100%;
+      align-items: center;
     }
   }
 }

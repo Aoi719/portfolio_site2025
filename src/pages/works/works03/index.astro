@@ -1,0 +1,46 @@
+---
+import Layout from "@layouts/Layout.astro";
+---
+
+<Layout>
+  <section class="section bg-white">
+    <div class="section__inner">
+      <h1 class="primary-heading">
+        <span class="d-ib">ブログ「Travel Blog」</span>
+      </h1>
+      <h2 class="secondary-heading mt-xxl">作品・ソースコードを見る</h2>
+      <ul class="button-list">
+        <li class="button-list__item">
+          <a href="https://wp-work01.nishiaoi.work/" target="_blank" class="link-button w-lg">作品を見る <img src="/images/icon_new-window_white.svg" alt="別ウインドウで開く" class="blank-icon" /></a>
+        </li>
+        <li class="button-list__item">
+          <a href="https://github.com/Aoi719/wp_02/tree/main/public" target="_blank" class="link-button w-lg"
+            >GitHubでソースコードを見る<br />（静的ページ構築） <img src="/images/icon_new-window_white.svg" alt="別ウインドウで開く" class="blank-icon" /></a
+          >
+        </li>
+        <li class="button-list__item">
+          <a href="https://github.com/Aoi719/wp_02/tree/wp_setting" target="_blank" class="link-button w-lg"
+            >GitHubでソースコードを見る<br />（WordPressテーマ構築） <img src="/images/icon_new-window_white.svg" alt="別ウインドウで開く" class="blank-icon" /></a
+          >
+        </li>
+      </ul>
+      <p class="mt-xxl">以下、「制作のポイント」もぜひご覧ください。</p>
+      <h2 class="secondary-heading mt-xxl">制作のポイント</h2>
+      <p>静的ページの構築は、<a href="/works/works01/index.html" class="text-link">コーポレートサイト</a>と同様に、HTMLとSCSSを用いて制作しました。<br />SCSSは、Node.jsを用いてコンパイルしています。</p>
+      <p class="mt-lg">その後「Local」というアプリケーションを使用し、ローカル環境でWordPressテーマ開発を行いました。</p>
+      <p class="mt-lg">WordPressは実務経験が非常に少なかったため、改めて1からテーマ開発を勉強し直し、静的ファイルの構築～テーマ化、そしてLocalから本番サーバーへの引っ越しまでを自力で行いました。</p>
+      <p class="mt-lg">
+        本番サーバーへの引っ越しは、WordPressプラグイン「All-in-One WP Migration」を用いました。<br />すべてのファイルをエクスポートしてしまうと容量制限を超えてしまったため、画像ファイルは除外して書き出しなおすことで無事に引っ越しができました。
+      </p>
+      <p class="mt-lg">
+        トップページのページネーションの実装は、プラグインではなくfunctions.phpに関数を記述することで行っています。<br />現在のページ数と全ページ数の取得、次ページ・前ページのリンクの出力まですべてを関数処理しています。<br
+        />難しく感じたところですが、プログラムそのものやWordPressのテンプレートタグの理解度を深めるためにも、関数記述にチャレンジしました。
+      </p>
+      <p class="mt-m">
+        グローバルメニューはWordPressで管理可能にしています。<br />この文章を書いている時点では、サイドバーがWordPress管理にできていないので、次はそこもトライしたいところです。
+      </p>
+      <p class="mt-m mb-xl">（ちなみに、各記事のタイトルや内容はChatGPTさんに考えてもらいました。）</p>
+      <div class="d-flex jcc"><a href="../../" class="link-button">ホームへ戻る</a></div>
+    </div>
+  </section>
+</Layout>
