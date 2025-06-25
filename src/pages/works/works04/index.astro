@@ -1,0 +1,33 @@
+---
+import Layout from "@layouts/Layout.astro";
+---
+
+<Layout>
+  <section class="section bg-white">
+    <div class="section__inner">
+      <h1 class="primary-heading">
+        <span class="d-ib">LP「生産性向上アプリ」</span>
+      </h1>
+      <h2 class="secondary-heading mt-xxl">作品・ソースコードを見る</h2>
+      <ul class="button-list">
+        <li class="button-list__item">
+          <a href="https://aoi719.github.io/lp_portfolio/" target="_blank" class="link-button w-lg">作品を見る <img src="/images/icon_new-window_white.svg" alt="別ウインドウで開く" class="blank-icon" /></a>
+        </li>
+        <li class="button-list__item">
+          <a href="https://github.com/Aoi719/lp_portfolio/tree/main" target="_blank" class="link-button w-lg">GitHubでソースコードを見る <img src="/images/icon_new-window_white.svg" alt="別ウインドウで開く" class="blank-icon" /></a>
+        </li>
+      </ul>
+      <p class="mt-xxl">以下、「制作のポイント」もぜひご覧ください。</p>
+      <h2 class="secondary-heading mt-xxl">制作のポイント</h2>
+      <p>デザインはCanvaの生成テンプレートを使用。ポイントや利用者の声など、一部テキストはChatGPTで生成しました。</p>
+      <p class="mt-lg">今作のテーマは「LP」で、少し動きのついた表現を目指しました。</p>
+      <p class="mt-lg">
+        スクロールで画面を表示したら要素をフェードインさせる、というよく見るアニメーションですが<br />
+        JSとCSSを組み合わせて、一部の要素のフェード開始を遅らせて、視覚効果を狙いました。<br />
+        （MV、料金など）
+      </p>
+      <p class="mt-lg mb-xl">料金の時間差フェードインは、HTMLにdata属性を振り、その属性値を利用して、JSで付与するクラス名を変更することで表現しています。</p>
+      <div class="d-flex jcc"><a href="../../" class="link-button">ホームへ戻る</a></div>
+    </div>
+  </section>
+</Layout>
