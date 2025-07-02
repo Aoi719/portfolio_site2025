@@ -1,0 +1,43 @@
+---
+import Layout from "@layouts/Layout.astro";
+---
+
+<Layout>
+  <section class="section bg-white">
+    <div class="section__inner">
+      <h1 class="primary-heading">
+        <span class="d-ib">Todoリスト</span>
+      </h1>
+      <h2 class="secondary-heading mt-xxl">作品・ソースコードを見る</h2>
+      <ul class="button-list">
+        <li class="button-list__item">
+          <a href="https://nishiaoi.work/todo/" target="_blank" class="link-button w-lg">作品を見る <img src="/images/icon_new-window_white.svg" alt="別ウインドウで開く" class="blank-icon" /></a>
+        </li>
+        <li class="button-list__item">
+          <a href="https://github.com/Aoi719/class_todo" target="_blank" class="link-button w-lg">GitHubでソースコードを見る <img src="/images/icon_new-window_white.svg" alt="別ウインドウで開く" class="blank-icon" /></a>
+        </li>
+      </ul>
+
+      <p class="mt-xxl">以下、「制作のポイント」もぜひご覧ください。</p>
+      <h2 class="secondary-heading mt-xxl">制作のポイント</h2>
+      <p>このTodoリストは、2つのテーマを掲げて制作を開始しました。</p>
+      <p class="mt-lg">1つめのテーマは、jQueryからの卒業です。</p>
+      <p class="mt-lg">
+        私はこれまで、制作業務ではチームの方針もあり、ずっとjQueryを使用していました。<br />しかし、今後のスキルの幅を広げるためにも、jQueryからの卒業をしたいと考え、vanillaJSの勉強を始めています。<br />このToDoリストは、vanillaJSで制作しています。
+      </p>
+      <p class="mt-lg">2つめのテーマは、「クラスとインスタンス」を使った制作です。</p>
+      <p class="mt-lg">
+        学習を進めるうち、クラスとインスタンスを全く使ってこなかったことに改めて気づかされました。<br />
+        色々調べながらなんとか動くTodoアプリを作ることができました。<br />
+        まだまだ理解できていないことも多いので、段階を踏みながら、1日1つはクラスとインスタンスを使ったプログラムを書いて理解を深めていく計画を立てています。
+      </p>
+      <p class="mt-lg mb-xl">
+        こちらはデザインもオリジナルで制作しています。<br />
+        Bootstrapを使用していますが、基本スタイルのほか、見出しやボタンはオリジナルのスタイルを当てています。 機能性を考えてあまり派手な装飾にしない代わりに、グラデーションやパステルカラーなどを使用して飽きない見た目を目指しています。<br />
+        淡い色合いのため、文字色と背景色のコントラスト比が低くなりすぎないように注意しました。
+      </p>
+
+      <div class="d-flex jcc"><a href="../../" class="link-button">ホームへ戻る</a></div>
+    </div>
+  </section>
+</Layout>
