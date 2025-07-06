@@ -1,6 +1,15 @@
 [
   {
     "id": 1,
+    "title": "キャラクターガチャゲーム「Elementia」",
+    "description": "React + Viteを使用して、キャラクターガチャゲームを作りました。",
+    "image": "/images/works_img07.png",
+    "url": "/works/works06/index.html",
+    "slug": "work-7",
+    "tags": ["React", "Vite", "CSS Module"]
+  },
+  {
+    "id": 2,
     "title": "Todoリスト",
     "description": "JavaScriptのクラスとインスタンスを使用して、Todoリストを作りました。",
     "image": "/images/works_img06.png",
@@ -9,7 +18,7 @@
     "tags": ["HTML", "CSS", "JavaScript"]
   },
   {
-    "id": 2,
+    "id": 3,
     "title": "LP「生産性向上アプリ」",
     "description": "LP制作です。HTML、CSS、jQueryを組み合わせて、フェードインの動きがついたサイトになっています。（サイトの内容等はすべて架空のものです。）",
     "image": "/images/works_img05.jpg",
@@ -18,7 +27,7 @@
     "tags": ["HTML", "CSS", "SCSS", "jQuery", "Node.js"]
   },
   {
-    "id": 3,
+    "id": 4,
     "title": "ブログ「Travel Blog」",
     "description": "WordPressテーマ開発を勉強し、制作したサイトです。\nまずはHTML/CSSをメインにサイトを構築し、そのファイルをもとにWordPressテーマ化を行いました。（記事の内容等はすべて架空のものです。）",
     "image": "/images/works_img04.jpg",
@@ -27,7 +36,7 @@
     "tags": ["WordPress", "HTML", "CSS", "SCSS", "jQuery", "Node.js"]
   },
   {
-    "id": 4,
+    "id": 5,
     "title": "コーポレートサイト「Envision Lab」",
     "description": "Web制作・コンサルなどの事業を行う会社を想定したコーポレートサイトの作品です。\nシンプルですが、Webアクセシビリティ（AA）をクリアすることを念頭に置き制作しています。\nメインビジュアルのスライダープラグインは、アクセシビリティに特化している「Splide」を使用。\nWebアクセシビリティについては、<a href=\"/a11y/index.html\" class=\"text-link\">Webアクセシビリティについて</a>をご参照ください。",
     "image": "/images/works_img01.jpg",
@@ -36,7 +45,7 @@
     "tags": ["アクセシビリティ", "HTML", "CSS", "SCSS", "jQuery", "Node.js"]
   },
   {
-    "id": 5,
+    "id": 6,
     "title": "ポートフォリオサイト",
     "description": "今ご覧のポートフォリオサイトです。「Astro」というフレームワークを用いて制作しました。\n作品一覧をJSONデータで管理し、Astroと組み合わせて簡単に更新できるように工夫しています。",
     "image": "/images/works_img02.png",
@@ -45,7 +54,7 @@
     "tags": ["Astro", "HTML", "CSS", "SCSS", "jQuery", "JSON", "Node.js"]
   },
   {
-    "id": 6,
+    "id": 7,
     "title": "コラム：Webアクセシビリティについて",
     "description": "Webアクセシビリティについてのコラムを書きました。\nコーポレートサイト作品「Envision Lab」でもWebアクセシビリティを意識した制作をしていますが、「そもそもWebアクセシビリティとは何か？」の解説をまとめています。",
     "image": "/images/works_img03.png",
