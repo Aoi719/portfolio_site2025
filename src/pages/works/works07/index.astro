@@ -1,0 +1,52 @@
+---
+import Layout from "@layouts/Layout.astro";
+---
+
+<Layout>
+  <section class="section bg-white">
+    <div class="section__inner">
+      <h1 class="primary-heading">
+        <span class="d-ib">音楽レビュー投稿サイト「Favorite Music App」</span>
+      </h1>
+      <h2 class="secondary-heading mt-xxl">作品・ソースコードを見る</h2>
+      <ul class="button-list">
+        <li class="button-list__item">
+          <a href="https://react-music-review-app.vercel.app/" target="_blank" class="link-button w-lg">作品を見る <img src="/images/icon_new-window_white.svg" alt="別ウインドウで開く" class="blank-icon" /></a>
+        </li>
+        <li class="button-list__item">
+          <a href="https://github.com/Aoi719/react_music_review/" target="_blank" class="link-button w-lg">GitHubでソースコードを見る <img src="/images/icon_new-window_white.svg" alt="別ウインドウで開く" class="blank-icon" /></a>
+        </li>
+      </ul>
+
+      <p class="mt-xxl">以下、「制作のポイント」もぜひご覧ください。</p>
+      <h2 class="secondary-heading mt-xxl">制作のポイント</h2>
+      <p>Reactで制作した2つ目の作品で、総制作時間は12時間ほどです。</p>
+      <p class="mt-lg">
+        <a href="/works/works06/index.html" class="text-link">キャラクターガチャ</a>と同様にReact + Viteを使用し、新たにTailwind CSSも取り入れました。
+        <br />ノーマルのTailwind CSSに加え、Flowbite ReactというReact向けのTailwind CSSライブラリ導入することで、デザインと機能を両立した実装に挑戦しています。
+      </p>
+      <p class="mt-lg">前回はできなかったLocalStorageへの保存にもチャレンジし、リロードしてもレビュー内容が保持されるアプリケーションを完成させました。</p>
+      <h3 class="mt-xl mb-m">使用技術と実装ポイント</h3>
+      <ul class="disc-list">
+        <li>React (Vite) を使ってSPA（シングルページアプリケーション）として実装</li>
+        <li>Tailwind CSS によるスタイリングで、レスポンシブデザインに対応</li>
+        <li>Flowbite React を導入し、UIコンポーネント（Card, Sidebarなど）を効率よく実装</li>
+        <li>画像アップロードは、FileReaderでBase64形式に変換して保存・表示できるよう対応</li>
+      </ul>
+      <h3 class="mt-xl mb-m">工夫した点</h3>
+      <ul class="disc-list">
+        <li>LocalStorageを使用し、バックエンドなしでも「保存→一覧表示→編集・削除→再表示」まで完結できる構造</li>
+        <li>レビュー投稿時のタグ入力はTab・カンマ押下で登録＋その場で削除可能に</li>
+      </ul>
+      <h3 class="mt-xl mb-m">今後の展望</h3>
+      <ul class="disc-list">
+        <li>投稿にコメントや「いいね」など、レビューアプリらしい機能を実装したい</li>
+        <li>タグの並び替え・検索フィルターなどの追加も検討中</li>
+      </ul>
+      <p class="mt-lg"></p>
+      <p class="mt-lg mb-xl"></p>
+
+      <div class="d-flex jcc"><a href="../../" class="link-button">ホームへ戻る</a></div>
+    </div>
+  </section>
+</Layout>
