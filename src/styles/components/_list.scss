@@ -98,3 +98,13 @@
     padding: 2px 10px;
   }
 }
+
+.numbered-list {
+  list-style-type: decimal;
+  padding-left: 20px;
+  > li {
+    & + li {
+      margin-top: 8px;
+    }
+  }
+}
